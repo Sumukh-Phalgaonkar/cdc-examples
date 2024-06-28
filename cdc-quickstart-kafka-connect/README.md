@@ -19,20 +19,20 @@
    Here is a sample config to deploy connector. Make changes appropriately.
     ```
    curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" localhost:8083/connectors/ -d '{
-   "name": "ybconnector1",
-   "config": {
-     "plugin.name":"pgoutput",
-     "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
-     "database.hostname":"172.165.27.143",
-     "database.port":"5432",
-     "database.user": "postgres",
-     "database.password":"postgres",
-     "database.dbname":"postgres",
-     "database.server.name":"ybconnector1",
-     "snapshot.mode":"never",
-     "provide.transaction.metadata":"true",
-     "topic.prefix":"vanilla",
-     "table.include.list":"public.t1"
-   }
+      "name": "ybconnector1",
+      "config": {
+        "plugin.name":"pgoutput",
+        "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+        "database.hostname":"172.165.27.143",
+        "database.port":"5432",
+        "database.user": "postgres",
+        "database.password":"postgres",
+        "database.dbname":"postgres",
+        "database.server.name":"ybconnector1",
+        "snapshot.mode":"never",
+        "provide.transaction.metadata":"true",
+        "topic.prefix":"vanilla",
+        "table.include.list":"public.t1"
+      }
    }'
     ```

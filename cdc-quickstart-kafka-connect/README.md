@@ -32,7 +32,7 @@
      "snapshot.mode":"never",
      "provide.transaction.metadata":"true",
      "topic.prefix":"vanilla",
-     "table.include.list":"public.t3"
+     "table.include.list":"public.t1"
    }
    }'
     ```
